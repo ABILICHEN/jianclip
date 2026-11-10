@@ -1,6 +1,7 @@
-# Local data and secrets
+﻿# Local data and secrets
 history.dat*
 settings.json
+knowledge-progress.json
 *.tmp
 .env
 .env.*

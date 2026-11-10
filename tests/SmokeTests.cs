@@ -16,6 +16,7 @@ class Tests {
   var s=new AppSettings{WaterMinutes=5,EyesMinutes=2,StretchMinutes=3,StretchEnabled=true,PetX=-400,PetY=100};s.Save(tmp);var settings=AppSettings.Load(tmp);Check(settings.WaterMinutes==5&&settings.StretchEnabled&&settings.PetX==-400,"Settings including negative monitor coordinates roundtrip");
   DateTime now=new DateTime(2026,11,10,10,0,0);var clock=new ReminderClock(s,now);Check(clock.Next(s,now.AddMinutes(2),false)=="eyes","Eye reminder schedule");clock.Snooze(now.AddMinutes(2));Check(clock.Next(s,now.AddMinutes(6),false)==null,"10 minute snooze suppresses reminders");Check(clock.Next(s,now.AddMinutes(13),true)==null,"Idle suppresses reminders");Check(clock.Next(s,new DateTime(2026,11,10,23,0,0),false)==null,"Night quiet hours suppress reminders");var snoozeClock=new ReminderClock(s,now);snoozeClock.Next(s,now.AddMinutes(5),false);snoozeClock.Snooze(now.AddMinutes(5),"water");Check(snoozeClock.Next(s,now.AddMinutes(14),false)==null,"Snoozed water waits full 10 minutes");Check(snoozeClock.Next(s,now.AddMinutes(15),false)=="water","Same reminder returns after snooze");s.RemindersEnabled=false;Check(clock.Next(s,now.AddMinutes(15),false)==null,"Disabled reminders stay silent");
   foreach(string pose in new[]{"idle","wave","happy","water","eyes","stretch","sleep"})using(var b=KangarooArt.Preview(pose,260,290)){Check(b.GetPixel(0,0).A==0&&b.GetPixel(130,220).A>0,"Transparent artwork renders "+pose);}
+  passed += KnowledgeTests.Run(tmp);
   Console.WriteLine("ALL "+passed+" CHECKS PASSED");
  }finally{Directory.Delete(tmp,true);}}
 }

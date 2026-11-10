@@ -1,0 +1,860 @@
+[
+  {
+    "Id": "poem-01",
+    "Category": "poem",
+    "Title": "登鹳雀楼",
+    "Body": "欲穷千里目，更上一层楼。",
+    "Detail": "登高才能望远。诗句把真实的登楼体验转成开阔眼界的启发：想看见更多，就再向前一步。",
+    "Attribution": "王之涣《登鹳雀楼》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-02",
+    "Category": "poem",
+    "Title": "望岳",
+    "Body": "会当凌绝顶，一览众山小。",
+    "Detail": "“会当”带着坚定的期待。登顶后视野骤然打开，也写出了青年诗人的志气与向往。",
+    "Attribution": "杜甫《望岳》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-03",
+    "Category": "poem",
+    "Title": "山居秋暝",
+    "Body": "明月松间照，清泉石上流。",
+    "Detail": "一个“照”、一个“流”，把月光的静与泉水的动放在一起。松林、月色和清泉构成了清澈安宁的秋夜。",
+    "Attribution": "王维《山居秋暝》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-04",
+    "Category": "poem",
+    "Title": "饮酒·其五",
+    "Body": "采菊东篱下，悠然见南山。",
+    "Detail": "“见”不是刻意寻找，而是在采菊时自然抬眼。悠然的心境，让普通的风景也有了宽阔的余味。",
+    "Attribution": "陶渊明《饮酒·其五》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-05",
+    "Category": "poem",
+    "Title": "行路难·其一",
+    "Body": "长风破浪会有时，直挂云帆济沧海。",
+    "Detail": "前路虽难，诗人仍相信会有乘风破浪的一天。结尾从困顿转为昂扬，让整首诗的情绪向上扬起。",
+    "Attribution": "李白《行路难·其一》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-06",
+    "Category": "poem",
+    "Title": "次北固山下",
+    "Body": "海日生残夜，江春入旧年。",
+    "Detail": "残夜未尽，太阳已升起；旧年未过，江上已有春意。新事物在旧事物中悄悄生长，时序更替写得鲜活。",
+    "Attribution": "王湾《次北固山下》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-07",
+    "Category": "poem",
+    "Title": "游山西村",
+    "Body": "山重水复疑无路，柳暗花明又一村。",
+    "Detail": "先写受阻，再写转机，景色和心情同时发生变化。这并非说转机必然到来，而是提醒人保留继续探索的勇气。",
+    "Attribution": "陆游《游山西村》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-08",
+    "Category": "poem",
+    "Title": "题西林壁",
+    "Body": "不识庐山真面目，只缘身在此山中。",
+    "Detail": "身在山中，视角便受到局部景物限制。诗句借山水说明：认识一个整体，有时需要退一步，换一个位置。",
+    "Attribution": "苏轼《题西林壁》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-09",
+    "Category": "poem",
+    "Title": "春夜喜雨",
+    "Body": "随风潜入夜，润物细无声。",
+    "Detail": "“潜”和“细无声”让春雨有了温柔的性格。它不喧哗，却滋养万物，写出了诗人对及时好雨的喜爱。",
+    "Attribution": "杜甫《春夜喜雨》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-10",
+    "Category": "poem",
+    "Title": "钱塘湖春行",
+    "Body": "几处早莺争暖树，谁家新燕啄春泥。",
+    "Detail": "莺争暖树、燕衔春泥，两个动作把早春写活。“几处”“谁家”也让观察带着发现新变化的欣喜。",
+    "Attribution": "白居易《钱塘湖春行》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-11",
+    "Category": "poem",
+    "Title": "观书有感·其一",
+    "Body": "问渠那得清如许？为有源头活水来。",
+    "Detail": "水塘清澈，因为有源头不断注入活水。诗题是“观书有感”，借清水比喻持续学习带来的清明与生机。",
+    "Attribution": "朱熹《观书有感·其一》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-12",
+    "Category": "poem",
+    "Title": "冬夜读书示子聿",
+    "Body": "纸上得来终觉浅，绝知此事要躬行。",
+    "Detail": "书本能引路，但深刻理解仍需要亲自实践。这里强调的是把阅读与行动连接起来，而非否定读书。",
+    "Attribution": "陆游《冬夜读书示子聿》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-13",
+    "Category": "poem",
+    "Title": "送元二使安西",
+    "Body": "劝君更尽一杯酒，西出阳关无故人。",
+    "Detail": "一杯又一杯的劝酒，藏着朋友将远行的不舍。没有繁复的议论，只用日常动作写出绵长的送别情。",
+    "Attribution": "王维《送元二使安西》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-14",
+    "Category": "poem",
+    "Title": "江雪",
+    "Body": "孤舟蓑笠翁，独钓寒江雪。",
+    "Detail": "“孤”“独”与前面的“千”“万”相照应，天地越辽阔，钓者越显清寂。极少的颜色与动作，留下丰富的想象。",
+    "Attribution": "柳宗元《江雪》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-15",
+    "Category": "poem",
+    "Title": "早发白帝城",
+    "Body": "两岸猿声啼不住，轻舟已过万重山。",
+    "Detail": "耳边猿声未歇，轻舟已穿过群山。声音的连续与行舟的迅疾形成对照，传达出轻快畅达的心情。",
+    "Attribution": "李白《早发白帝城》",
+    "Source": ""
+  },
+  {
+    "Id": "poem-16",
+    "Category": "poem",
+    "Title": "如梦令·常记溪亭日暮",
+    "Body": "争渡，争渡，惊起一滩鸥鹭。",
+    "Detail": "重复的“争渡”让节奏突然活跃，鸥鹭的惊飞则把画面推向开阔。回忆中的游兴、迷路和惊喜都在这一刻涌出。",
+    "Attribution": "李清照《如梦令·常记溪亭日暮》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-01",
+    "Category": "quote",
+    "Title": "学与思",
+    "Body": "学而不思则罔，思而不学则殆。",
+    "Detail": "只接收信息或只凭空思考都不够。今天读到一个新观点时，也问问自己：证据是什么？能怎样使用？",
+    "Attribution": "《论语·为政》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-02",
+    "Category": "quote",
+    "Title": "走出第一步",
+    "Body": "千里之行，始于足下。",
+    "Detail": "把大目标缩小到一个能立即完成的动作，开始往往就容易了一点。",
+    "Attribution": "《老子》第六十四章",
+    "Source": ""
+  },
+  {
+    "Id": "quote-03",
+    "Category": "quote",
+    "Title": "让积累发生",
+    "Body": "不积跬步，无以至千里。",
+    "Detail": "积累的单位可以很小。学一个词、写一段话、整理一个文件，都是向前走的一步。",
+    "Attribution": "《荀子·劝学》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-04",
+    "Category": "quote",
+    "Title": "给未知留个位置",
+    "Body": "知之为知之，不知为不知，是知也。",
+    "Detail": "准确知道自己不知道什么，本身就是学习能力的一部分。遇到不确定的事，可以先查证再下结论。",
+    "Attribution": "《论语·为政》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-05",
+    "Category": "quote",
+    "Title": "保持开放",
+    "Body": "三人行，必有我师焉。",
+    "Detail": "向别人学习，不一定要等到正式课堂。留心身边人的长处，也能得到新方法。",
+    "Attribution": "《论语·述而》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-06",
+    "Category": "quote",
+    "Title": "先去做",
+    "Body": "临渊羡鱼，不如退而结网。",
+    "Detail": "羡慕一个结果之后，可以问：为了靠近它，我现在能做哪一小步准备？",
+    "Attribution": "《汉书·董仲舒传》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-07",
+    "Category": "quote",
+    "Title": "从容坚持",
+    "Body": "锲而不舍，金石可镂。",
+    "Detail": "持续的行动会留下痕迹。把任务拆小、给自己合理的休息，更有利于坚持。",
+    "Attribution": "《荀子·劝学》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-08",
+    "Category": "quote",
+    "Title": "继续更新",
+    "Body": "苟日新，日日新，又日新。",
+    "Detail": "更新不必是翻天覆地。修正一个旧习惯、学到一种新看法，也是一种“日新”。",
+    "Attribution": "《礼记·大学》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-09",
+    "Category": "quote",
+    "Title": "带着问题读书",
+    "Body": "尽信书，则不如无书。",
+    "Detail": "读书也需要判断。作者的证据、语境与适用范围，都值得一并考察。",
+    "Attribution": "《孟子·尽心下》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-10",
+    "Category": "quote",
+    "Title": "诚实交流",
+    "Body": "言必信，行必果。",
+    "Detail": "承诺要认真，行动要负责；但也要结合具体情境判断，避免机械地坚持明显错误的决定。",
+    "Attribution": "《论语·子路》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-11",
+    "Category": "quote",
+    "Title": "先整理自己",
+    "Body": "工欲善其事，必先利其器。",
+    "Detail": "开始一项任务前，先把资料、工具和工作环境准备好，可以减少来回切换的成本。",
+    "Attribution": "《论语·卫灵公》",
+    "Source": ""
+  },
+  {
+    "Id": "quote-12",
+    "Category": "quote",
+    "Title": "看到微小的善意",
+    "Body": "勿以善小而不为。",
+    "Detail": "一个清楚的回复、一次及时的帮助，都可能让别人的一天轻松一点。",
+    "Attribution": "《三国志·蜀书·先主传》裴松之注引《诸葛亮集》",
+    "Source": ""
+  },
+  {
+    "Id": "word-01",
+    "Category": "word",
+    "Title": "curiosity",
+    "Body": "n. 好奇心",
+    "Detail": "Curiosity leads to questions.\n好奇心让人提出问题。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˌkjʊriˈɑːsəti/",
+    "SpeakText": "curiosity"
+  },
+  {
+    "Id": "word-02",
+    "Category": "word",
+    "Title": "resilience",
+    "Body": "n. 恢复力；韧性",
+    "Detail": "Rest supports resilience.\n休息有助于恢复力。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/rɪˈzɪliəns/",
+    "SpeakText": "resilience"
+  },
+  {
+    "Id": "word-03",
+    "Category": "word",
+    "Title": "serendipity",
+    "Body": "n. 意外的幸运发现",
+    "Detail": "Finding this book was serendipity.\n发现这本书是一次幸运的巧合。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˌserənˈdɪpəti/",
+    "SpeakText": "serendipity"
+  },
+  {
+    "Id": "word-04",
+    "Category": "word",
+    "Title": "ephemeral",
+    "Body": "adj. 短暂的；转瞬即逝的",
+    "Detail": "The rainbow was ephemeral.\n那道彩虹转瞬即逝。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ɪˈfemərəl/",
+    "SpeakText": "ephemeral"
+  },
+  {
+    "Id": "word-05",
+    "Category": "word",
+    "Title": "mindful",
+    "Body": "adj. 留心的；注意到的",
+    "Detail": "Be mindful of your time.\n留意你的时间安排。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈmaɪndfəl/",
+    "SpeakText": "mindful"
+  },
+  {
+    "Id": "word-06",
+    "Category": "word",
+    "Title": "wander",
+    "Body": "v. 漫步；闲逛",
+    "Detail": "We wander through the park.\n我们在公园里漫步。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈwɑːndər/",
+    "SpeakText": "wander"
+  },
+  {
+    "Id": "word-07",
+    "Category": "word",
+    "Title": "wonder",
+    "Body": "n. 惊奇；v. 想知道",
+    "Detail": "I wonder how it works.\n我想知道它如何运作。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈwʌndər/",
+    "SpeakText": "wonder"
+  },
+  {
+    "Id": "word-08",
+    "Category": "word",
+    "Title": "cherish",
+    "Body": "v. 珍惜；珍爱",
+    "Detail": "Cherish the quiet moments.\n珍惜那些安静的时刻。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈtʃerɪʃ/",
+    "SpeakText": "cherish"
+  },
+  {
+    "Id": "word-09",
+    "Category": "word",
+    "Title": "glimpse",
+    "Body": "n. 一瞥；v. 瞥见",
+    "Detail": "I caught a glimpse of the moon.\n我瞥见了月亮。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ɡlɪmps/",
+    "SpeakText": "glimpse"
+  },
+  {
+    "Id": "word-10",
+    "Category": "word",
+    "Title": "thrive",
+    "Body": "v. 茁壮成长；蓬勃发展",
+    "Detail": "Plants thrive in suitable conditions.\n植物在适宜的条件下茁壮生长。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/θraɪv/",
+    "SpeakText": "thrive"
+  },
+  {
+    "Id": "word-11",
+    "Category": "word",
+    "Title": "deliberate",
+    "Body": "adj. 有意的；深思熟虑的",
+    "Detail": "It was a deliberate choice.\n那是一个经过深思熟虑的选择。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/dɪˈlɪbərət/",
+    "SpeakText": "deliberate"
+  },
+  {
+    "Id": "word-12",
+    "Category": "word",
+    "Title": "perspective",
+    "Body": "n. 视角；看法",
+    "Detail": "Try a different perspective.\n试着换一个视角。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/pərˈspektɪv/",
+    "SpeakText": "perspective"
+  },
+  {
+    "Id": "word-13",
+    "Category": "word",
+    "Title": "subtle",
+    "Body": "adj. 微妙的；细微的",
+    "Detail": "There is a subtle difference.\n这里存在细微的差别。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈsʌtəl/",
+    "SpeakText": "subtle"
+  },
+  {
+    "Id": "word-14",
+    "Category": "word",
+    "Title": "bloom",
+    "Body": "v. 开花；n. 花朵",
+    "Detail": "The flowers bloom in spring.\n花在春天开放。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/bluːm/",
+    "SpeakText": "bloom"
+  },
+  {
+    "Id": "word-15",
+    "Category": "word",
+    "Title": "cozy",
+    "Body": "adj. 舒适温暖的",
+    "Detail": "This is a cozy reading corner.\n这是一个温暖舒适的阅读角。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈkoʊzi/",
+    "SpeakText": "cozy"
+  },
+  {
+    "Id": "word-16",
+    "Category": "word",
+    "Title": "gratitude",
+    "Body": "n. 感激；谢意",
+    "Detail": "She expressed her gratitude.\n她表达了谢意。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈɡrætɪtuːd/",
+    "SpeakText": "gratitude"
+  },
+  {
+    "Id": "word-17",
+    "Category": "word",
+    "Title": "focus",
+    "Body": "n. 焦点；v. 专注",
+    "Detail": "Focus on one task at a time.\n一次专注于一项任务。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈfoʊkəs/",
+    "SpeakText": "focus"
+  },
+  {
+    "Id": "word-18",
+    "Category": "word",
+    "Title": "patience",
+    "Body": "n. 耐心",
+    "Detail": "Learning takes patience.\n学习需要耐心。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈpeɪʃəns/",
+    "SpeakText": "patience"
+  },
+  {
+    "Id": "word-19",
+    "Category": "word",
+    "Title": "clarity",
+    "Body": "n. 清晰；清楚",
+    "Detail": "A short break can bring clarity.\n短暂的休息能帮助理清思路。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈklærəti/",
+    "SpeakText": "clarity"
+  },
+  {
+    "Id": "word-20",
+    "Category": "word",
+    "Title": "embrace",
+    "Body": "v. 拥抱；欣然接受",
+    "Detail": "Embrace a new challenge.\n欣然接受一个新挑战。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ɪmˈbreɪs/",
+    "SpeakText": "embrace"
+  },
+  {
+    "Id": "word-21",
+    "Category": "word",
+    "Title": "luminous",
+    "Body": "adj. 发光的；明亮的",
+    "Detail": "The moon looked luminous.\n月亮看起来很明亮。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈluːmɪnəs/",
+    "SpeakText": "luminous"
+  },
+  {
+    "Id": "word-22",
+    "Category": "word",
+    "Title": "companion",
+    "Body": "n. 同伴；伙伴",
+    "Detail": "A book can be a good companion.\n书可以是一个好伙伴。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/kəmˈpænjən/",
+    "SpeakText": "companion"
+  },
+  {
+    "Id": "word-23",
+    "Category": "word",
+    "Title": "pocket",
+    "Body": "n. 口袋",
+    "Detail": "Keep a small notebook in your pocket.\n在口袋里放一本小笔记本。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈpɑːkɪt/",
+    "SpeakText": "pocket"
+  },
+  {
+    "Id": "word-24",
+    "Category": "word",
+    "Title": "playful",
+    "Body": "adj. 爱玩耍的；俏皮的",
+    "Detail": "The kangaroo has a playful smile.\n这只袋鼠露出俏皮的笑容。",
+    "Attribution": "袋袋词卡 · 美式常见读音；例句原创",
+    "Source": "",
+    "Pronunciation": "/ˈpleɪfəl/",
+    "SpeakText": "playful"
+  },
+  {
+    "Id": "fact-01",
+    "Category": "fact",
+    "Title": "金星的自转比公转还慢",
+    "Body": "金星自转一周约需 243 个地球日，绕太阳一周约需 225 个地球日。",
+    "Detail": "这里的“一天”指恒星日，也就是自转周期；如果按太阳在天空中回到同一位置计算，金星的太阳日约为 117 个地球日。两种“一天”不要混淆。",
+    "Attribution": "NASA",
+    "Source": "https://science.nasa.gov/venus/venus-facts/"
+  },
+  {
+    "Id": "fact-02",
+    "Category": "fact",
+    "Title": "金星上的日出方向",
+    "Body": "金星的自转方向与地球相反。",
+    "Detail": "从多数行星采用的参照方向看，金星属于逆行自转。因此在金星上，太阳会从西边升起、东边落下。",
+    "Attribution": "NASA",
+    "Source": "https://science.nasa.gov/venus/venus-facts/"
+  },
+  {
+    "Id": "fact-03",
+    "Category": "fact",
+    "Title": "你看到的是八分钟前的阳光",
+    "Body": "阳光从太阳表面到达地球，平均大约需要 8 分 20 秒。",
+    "Detail": "光虽然很快，但太阳离我们约 1.5 亿千米。太阳与地球的距离会随轨道位置略有变化，传播时间也会相应变化。",
+    "Attribution": "NASA / SOHO",
+    "Source": "https://soho.nascom.nasa.gov/explore/faq.html"
+  },
+  {
+    "Id": "fact-04",
+    "Category": "fact",
+    "Title": "光年是距离，不是时间",
+    "Body": "“一光年”是光在一年里走过的距离。",
+    "Detail": "天文学里的距离很大，使用光年能避免写出过长的数字。太阳与地球相距约 8 光分，意思是光走完这段路大约需要 8 分钟。",
+    "Attribution": "NASA",
+    "Source": "https://science.nasa.gov/universe/cosmic-distances/"
+  },
+  {
+    "Id": "fact-05",
+    "Category": "fact",
+    "Title": "章鱼有三颗心脏",
+    "Body": "章鱼的两颗鳃心推动血液流经鳃，另一颗体心把含氧血液送往身体。",
+    "Detail": "它们的循环系统分工明确。“三颗心”并不意味着三份独立的身体，而是共同服务于供氧与循环。",
+    "Attribution": "Smithsonian Ocean",
+    "Source": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives"
+  },
+  {
+    "Id": "fact-06",
+    "Category": "fact",
+    "Title": "章鱼的血为什么偏蓝",
+    "Body": "章鱼等头足类使用含铜的血蓝蛋白来运输氧。",
+    "Detail": "它与人类含铁的血红蛋白不同，结合氧后呈蓝色。不同动物演化出了不同的携氧方式。",
+    "Attribution": "Smithsonian Ocean",
+    "Source": "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives"
+  },
+  {
+    "Id": "fact-07",
+    "Category": "fact",
+    "Title": "涨潮不只取决于月亮在哪",
+    "Body": "海洋潮汐与月球、太阳的引力有关，但具体涨落时刻还受海岸形状、水深等影响。",
+    "Detail": "因此不能简单地说“月亮到了头顶就一定涨潮”。真实海洋并不是覆盖整个地球的等深水层。",
+    "Attribution": "NOAA",
+    "Source": "https://oceanservice.noaa.gov/facts/moon-tide.html"
+  },
+  {
+    "Id": "fact-08",
+    "Category": "fact",
+    "Title": "大潮不只发生在春天",
+    "Body": "新月和满月附近，太阳与月球的潮汐效应相互加强，常出现更大的潮差。",
+    "Detail": "英文 spring tide 的 spring 在这里与“涌起”相关，不是指春季。潮汐术语与四季并不一一对应。",
+    "Attribution": "NOAA",
+    "Source": "https://www.nesdis.noaa.gov/about/k-12-education/oceans-coasts/what-causes-tides"
+  },
+  {
+    "Id": "tip-01",
+    "Category": "tip",
+    "Title": "给文件名加上日期",
+    "Body": "用 2026-11-10 这样的年-月-日格式，文件排序通常更直观。",
+    "Detail": "同一项目可以统一为“日期_主题_版本”。避免“最终版2_真的最终版”让未来的自己猜谜。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-02",
+    "Category": "tip",
+    "Title": "为任务留下一条接力线",
+    "Body": "工作暂停前，写下“下一步具体做什么”。",
+    "Detail": "例如把“继续报告”改成“打开结果表，补上第三段对比”。下次回来时，就不用先花力气重建上下文。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-03",
+    "Category": "tip",
+    "Title": "把购物清单按区域分组",
+    "Body": "将清单分成蔬果、主食、日用品等小组。",
+    "Detail": "按门店布局整理还能减少来回走动。可以在出发前检查已有物品，减少重复购买。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-04",
+    "Category": "tip",
+    "Title": "少一点重复查找",
+    "Body": "经常使用的资料，可以整理成一个“入口文档”。",
+    "Detail": "入口只放链接、位置与一句用途说明，正文仍保留在原处。这样更新资料时不容易产生多份过期副本。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-05",
+    "Category": "tip",
+    "Title": "长文本先看结构",
+    "Body": "面对长文，先扫标题、摘要和结尾，再决定细读哪部分。",
+    "Detail": "这是一种阅读策略，不代替细读。对重要论证，仍要回到原文检查证据、定义与上下文。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-06",
+    "Category": "tip",
+    "Title": "给待办加一个动作动词",
+    "Body": "把“发票”写成“下载并整理本月发票”。",
+    "Detail": "明确动作和对象之后，更容易知道任务何时开始、何时完成。可以再补一个可执行的最小步骤。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-07",
+    "Category": "tip",
+    "Title": "临时资料也需要归宿",
+    "Body": "为下载内容设置一个定期整理的临时文件夹。",
+    "Detail": "保留前先判断：还需要吗？应该放到哪个项目？有敏感信息的文件，要按自己的隐私习惯妥善保管。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-08",
+    "Category": "tip",
+    "Title": "给常用物品一个固定位置",
+    "Body": "钥匙、耳机或门禁卡可以各有一个容易记住的放置点。",
+    "Detail": "让“用完放回”成为顺手动作，比每天出门前发动一次寻宝游戏轻松一些。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-09",
+    "Category": "tip",
+    "Title": "先把问题写清楚",
+    "Body": "求助时补上目标、已经尝试的方法，以及实际出现的结果。",
+    "Detail": "别人更容易帮你定位问题。截图或日志在分享前，也记得检查是否包含不需要公开的信息。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "tip-10",
+    "Category": "tip",
+    "Title": "开始前先减少一次干扰",
+    "Body": "挑一个容易分心的来源，暂时收起来。",
+    "Detail": "不需要一次改变所有习惯。可以先关闭一个无关页面，或把当前任务所需的资料放到一起。",
+    "Attribution": "袋袋原创 · 日常经验建议",
+    "Source": ""
+  },
+  {
+    "Id": "quiz-01",
+    "Category": "quiz",
+    "Title": "谁先到山顶？",
+    "Body": "你在赛跑中超过了第二名，此时你排第几？",
+    "Detail": "你取代了原来第二名的位置，所以现在是第二名。超过第一名才会成为第一。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "第一名",
+      "第二名",
+      "第三名"
+    ],
+    "AnswerIndex": 1
+  },
+  {
+    "Id": "quiz-02",
+    "Category": "quiz",
+    "Title": "兄弟姐妹",
+    "Body": "小明的妈妈有三个孩子：大毛、二毛，还有谁？",
+    "Detail": "题目已经说了“小明的妈妈”，第三个孩子就是小明。先读题，比顺着名字猜更重要。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "三毛",
+      "小明",
+      "毛毛"
+    ],
+    "AnswerIndex": 1
+  },
+  {
+    "Id": "quiz-03",
+    "Category": "quiz",
+    "Title": "一公斤的较量",
+    "Body": "一公斤铁和一公斤棉花，哪个质量更大？",
+    "Detail": "两者质量都是一公斤。占据的体积可能不同，但题目问的是质量。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "铁",
+      "棉花",
+      "一样大"
+    ],
+    "AnswerIndex": 2
+  },
+  {
+    "Id": "quiz-04",
+    "Category": "quiz",
+    "Title": "全年都算",
+    "Body": "一年里有几个自然月至少包含 28 天？",
+    "Detail": "每个月都至少有 28 天。注意题目是“包含 28 天”，不是“只有 28 天”。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "只有 2 月",
+      "7 个",
+      "12 个"
+    ],
+    "AnswerIndex": 2
+  },
+  {
+    "Id": "quiz-05",
+    "Category": "quiz",
+    "Title": "口袋里的糖",
+    "Body": "口袋里有 5 颗糖，你拿走了 2 颗，你拿到了几颗？",
+    "Detail": "问的是你拿到的数量，不是口袋剩下的数量。拿走两颗，就拿到了两颗。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "2 颗",
+      "3 颗",
+      "5 颗"
+    ],
+    "AnswerIndex": 0
+  },
+  {
+    "Id": "quiz-06",
+    "Category": "quiz",
+    "Title": "折纸小挑战",
+    "Body": "把一张普通纸对折一次，纸有几层？",
+    "Detail": "一次对折是两层；连续两次理想对折才会有四层。这里不考虑把纸折成其他形状。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "1 层",
+      "2 层",
+      "4 层"
+    ],
+    "AnswerIndex": 1
+  },
+  {
+    "Id": "quiz-07",
+    "Category": "quiz",
+    "Title": "直线上的点",
+    "Body": "在一条直线上放 3 个不同的点，连接相邻两点，一共得到几段？",
+    "Detail": "三个点从左到右排列，相邻之间有两个间隔，因此得到两段。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "2 段",
+      "3 段",
+      "4 段"
+    ],
+    "AnswerIndex": 0
+  },
+  {
+    "Id": "quiz-08",
+    "Category": "quiz",
+    "Title": "闰年的二月",
+    "Body": "通常公历的闰年，2 月有多少天？",
+    "Detail": "公历闰年的 2 月有 29 天。是否闰年要按公历规则判断，不是每个能被 4 整除的世纪年份都算闰年。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "28 天",
+      "29 天",
+      "30 天"
+    ],
+    "AnswerIndex": 1
+  },
+  {
+    "Id": "quiz-09",
+    "Category": "quiz",
+    "Title": "英语口袋",
+    "Body": "pocket 的常见中文意思是什么？",
+    "Detail": "pocket 是“口袋”。袋鼠的育儿袋常用 pouch 表达，和衣服上的 pocket 不完全相同。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "口袋",
+      "彩虹",
+      "耐心"
+    ],
+    "AnswerIndex": 0
+  },
+  {
+    "Id": "quiz-10",
+    "Category": "quiz",
+    "Title": "谁在倒着转？",
+    "Body": "相对于地球的自转方向，下面哪个行星属于逆行自转？",
+    "Detail": "金星的自转方向与地球相反，常称逆行自转。天王星也有特殊的自转姿态，但不在选项中。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "金星",
+      "火星",
+      "木星"
+    ],
+    "AnswerIndex": 0
+  },
+  {
+    "Id": "quiz-11",
+    "Category": "quiz",
+    "Title": "小小方程",
+    "Body": "如果 3 个同样的苹果共重 600 克，每个苹果多少克？",
+    "Detail": "题目说苹果质量相同，所以 600 ÷ 3 = 200 克。现实中的苹果当然不一定一样重。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "100 克",
+      "200 克",
+      "300 克"
+    ],
+    "AnswerIndex": 1
+  },
+  {
+    "Id": "quiz-12",
+    "Category": "quiz",
+    "Title": "听见回声",
+    "Body": "回声主要是声音遇到障碍物后发生了什么？",
+    "Detail": "声音遇到合适的障碍物会反射。反射声与原声在时间上足够分开时，我们就能分辨出回声。",
+    "Attribution": "袋袋互动题 · 逻辑 / 常识",
+    "Source": "",
+    "Options": [
+      "反射",
+      "消失",
+      "变成光"
+    ],
+    "AnswerIndex": 0
+  }
+]

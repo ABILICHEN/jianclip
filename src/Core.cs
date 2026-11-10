@@ -59,7 +59,16 @@ public class AppSettings {
  public bool QuietAtNight = true, Animations = true;
  public int WaterMinutes = 45, EyesMinutes = 20, StretchMinutes = 60;
  public int PetX = int.MinValue, PetY = int.MinValue;
- public void Validate() { WaterMinutes = Clamp(WaterMinutes); EyesMinutes = Clamp(EyesMinutes); StretchMinutes = Clamp(StretchMinutes); }
+ public bool KnowledgeEnabled = true, PoetryEnabled = true, QuotesEnabled = true, WordsEnabled = true;
+ public bool FactsEnabled = true, TipsEnabled = true, QuizEnabled = true, PlayfulFeedback = true;
+ public bool AutoPronounce = false, SassyMode = false, PreferCuratedPoetry = true, PreferCommonWords = true, UseExtendedCatalog = true;
+ public int SassyLevel = 1;
+ public int KnowledgeMinutes = 5, PoetryDelaySeconds = 8, KnowledgeCardSeconds = 30, QuizPercent = 20;
+ public bool HasKnowledgeTypes { get { return PoetryEnabled || QuotesEnabled || WordsEnabled || FactsEnabled || TipsEnabled || QuizEnabled; } }
+ public void Validate() { WaterMinutes = Clamp(WaterMinutes); EyesMinutes = Clamp(EyesMinutes); StretchMinutes = Clamp(StretchMinutes);
+  SassyLevel = Math.Max(1, Math.Min(3, SassyLevel)); KnowledgeMinutes = Clamp(KnowledgeMinutes); PoetryDelaySeconds = Math.Max(1, Math.Min(120, PoetryDelaySeconds));
+  KnowledgeCardSeconds = Math.Max(10, Math.Min(180, KnowledgeCardSeconds)); QuizPercent = Math.Max(0, Math.Min(100, QuizPercent));
+ }
  static int Clamp(int n) { return Math.Max(1, Math.Min(240, n)); }
  public static AppSettings Load(string folder) {
   try { var s = new JavaScriptSerializer().Deserialize<AppSettings>(File.ReadAllText(Path.Combine(folder, "settings.json"))); s.Validate(); return s; }

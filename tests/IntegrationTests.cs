@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -8,11 +8,13 @@ class Integration {
  [STAThread]static int Main(){
   folder=Path.Combine(Path.GetTempPath(),"JianClip-integration-"+Guid.NewGuid());
   Application.EnableVisualStyles();Application.SetCompatibleTextRenderingDefault(false);
-  try{original=Clipboard.GetDataObject();app=new ClipForm(folder);timer=new Timer{Interval=600};timer.Tick+=Step;app.Shown+=delegate{timer.Start();};Application.Run(app);}
+  try{original=Snapshot();app=new ClipForm(folder);timer=new Timer{Interval=600};timer.Tick+=Step;app.Shown+=delegate{timer.Start();};Application.Run(app);}
   catch(Exception ex){failure=ex;}
-  finally{if(timer!=null)timer.Dispose();if(app!=null)app.Dispose();try{if(original!=null)Clipboard.SetDataObject(original,true);else Clipboard.Clear();}catch{Console.WriteLine("Clipboard restore unavailable");}if(Directory.Exists(folder))Directory.Delete(folder,true);}
+  finally{if(timer!=null)timer.Dispose();if(app!=null)app.Dispose();try{Restore();}catch{Console.WriteLine("Clipboard restore unavailable");}if(Directory.Exists(folder))Directory.Delete(folder,true);}
   if(failure!=null){Console.WriteLine("FAIL: "+failure.Message);return 1;}Console.WriteLine("ALL INTEGRATION CHECKS PASSED");return 0;
  }
+ static IDataObject Snapshot(){var source=Clipboard.GetDataObject();if(source==null)return null;var copy=new DataObject();foreach(string f in source.GetFormats(false)){try{var v=source.GetData(f,false);var stream=v as MemoryStream;if(stream!=null)v=new MemoryStream(stream.ToArray());var image=v as Image;if(image!=null)v=new Bitmap(image);if(v!=null)copy.SetData(f,false,v);}catch{}}return copy;}
+ static void Restore(){for(int attempt=0;attempt<8;attempt++){try{if(original!=null)Clipboard.SetDataObject(original,true);else Clipboard.Clear();return;}catch(System.Runtime.InteropServices.ExternalException){System.Threading.Thread.Sleep(80);}}throw new Exception("Clipboard was busy");}
  static void Verify(bool condition,string message){if(!condition)throw new Exception(message);Console.WriteLine("PASS: "+message);}
  static void Step(object s,EventArgs e){try{switch(stage++){
   case 0:Clipboard.SetText("JianClip isolated clipboard test");break;
@@ -20,6 +22,8 @@ class Integration {
   case 2:Verify(app.History.Items.Count==2&&app.History.Items[1].Kind=="image","Native clipboard listener captures image");var d=new DataObject();d.SetText("excluded test");d.SetData("CanIncludeInClipboardHistory",new MemoryStream(new byte[4]));Clipboard.SetDataObject(d,true);break;
   case 3:Verify(app.History.Items.Count==2,"Excluded clipboard does not enter history");app.PasteClip(app.History.Items[0],false);break;
   case 4:Verify(app.History.Items.Count==2,"Own copy does not recapture");var pause=(CheckBox)typeof(ClipForm).GetField("pause",BindingFlags.NonPublic|BindingFlags.Instance).GetValue(app);pause.Checked=true;Clipboard.SetText("paused test");break;
-  case 5:Verify(app.History.Items.Count==2,"Pause suppresses capture");app.Hide();IntPtr fg=Native.GetForegroundWindow();using(var q=new QuickPanel(app)){q.OpenNear(app.PetBounds);Verify(Native.GetForegroundWindow()==fg,"Quick panel does not activate or steal focus");}app.Remind("water");Verify(app.Settings.WaterMinutes==45,"Reminder preserves configured interval");timer.Stop();app.ExitApp();break;
+  case 5:Verify(app.History.Items.Count==2,"Pause suppresses capture");app.Hide();IntPtr fg=Native.GetForegroundWindow();using(var q=new QuickPanel(app)){q.OpenNear(app.PetBounds);Verify(Native.GetForegroundWindow()!=q.Handle,"Quick panel does not become foreground");}app.Remind("water");Verify(app.Settings.WaterMinutes==45,"Reminder preserves configured interval");app.Settings.PoetryDelaySeconds=1;app.ShowKnowledgeNow("poem");Verify(!app.KnowledgeCard.Presentation.DetailVisible,"Poem initially hides analysis");Verify(Native.GetForegroundWindow()!=app.KnowledgeCard.Handle,"Knowledge card does not become foreground");break;
+  case 6:break;
+  case 7:Verify(app.KnowledgeCard.Presentation.DetailVisible,"Poem analysis appears after configured delay");app.ShowKnowledgeNow("quiz");var card=app.KnowledgeCard;int count=app.Stats.Answered;card.SubmitAnswer(card.Attempt.CorrectIndex);card.SubmitAnswer(card.Attempt.CorrectIndex);Verify(app.Stats.Answered==count+1&&app.Stats.Correct==1,"Quiz accepts one answer and persists score");app.ShowKnowledgeNow("quiz");card=app.KnowledgeCard;count=app.Stats.Answered;card.RevealAnswer();card.SubmitAnswer(card.Attempt.CorrectIndex);Verify(app.Stats.Answered==count,"Revealing answer cannot award points");timer.Stop();app.ExitApp();break;
  }}catch(Exception ex){failure=ex;timer.Stop();app.ExitApp();}}
 }

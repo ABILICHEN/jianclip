@@ -14,7 +14,7 @@ public class PetForm : LayeredForm {
   app=owner; Text="袋袋 · 桌面伙伴"; Size=new Size(260,362);AllowDrop=true;
   DragEnter+=(s,e)=>{if(e.Data.GetDataPresent(DataFormats.UnicodeText)||e.Data.GetDataPresent(DataFormats.Text))e.Effect=DragDropEffects.Copy;};
   DragDrop+=(s,e)=>{string value=e.Data.GetData(DataFormats.UnicodeText) as string ?? e.Data.GetData(DataFormats.Text) as string;app.CollectText(value);};
-  var menu=new ContextMenuStrip();menu.Items.Add("打开口袋",null,delegate{app.ShowQuick();});menu.Items.Add("剪贴板管理",null,delegate{app.OpenPanel();});menu.Items.Add("陪伴与提醒设置",null,delegate{app.OpenSettings();});menu.Items.Add("稍后 10 分钟提醒",null,delegate{app.Snooze();});menu.Items.Add("隐藏袋袋",null,delegate{app.SetPetVisible(false);});menu.Items.Add("退出简贴",null,delegate{app.ExitApp();});ContextMenuStrip=menu;
+  var menu=new ContextMenuStrip();menu.Items.Add("打开口袋",null,delegate{app.ShowQuick();});menu.Items.Add("剪贴板管理",null,delegate{app.OpenPanel();});menu.Items.Add("陪伴与提醒设置",null,delegate{app.OpenSettings();});menu.Items.Add("来点知识 / 互动",null,delegate{app.ShowKnowledgeNow();});menu.Items.Add("稍后 10 分钟提醒",null,delegate{app.Snooze();});menu.Items.Add("隐藏袋袋",null,delegate{app.SetPetVisible(false);});menu.Items.Add("退出简贴",null,delegate{app.ExitApp();});ContextMenuStrip=menu;
   MouseDown+=(s,e)=>{if(e.Button!=MouseButtons.Left)return;dragging=true;moved=false;anchor=Cursor.Position;dragOrigin=Location;Capture=true;};
   MouseMove+=(s,e)=>{if(!dragging)return;Point d=Cursor.Position;int dx=d.X-anchor.X,dy=d.Y-anchor.Y;if(Math.Abs(dx)+Math.Abs(dy)>5)moved=true;if(moved){app.HideQuick();Location=new Point(dragOrigin.X+dx,dragOrigin.Y+dy);Render();}};
   MouseUp+=(s,e)=>{if(!dragging)return;dragging=false;Capture=false;if(moved){ClampPosition();app.Settings.PetX=Left;app.Settings.PetY=Top;app.SaveSettings();}else{React("wave","嗨！口袋里的内容随时可用。",4);app.ShowQuick();}};
@@ -31,7 +31,7 @@ public class PetForm : LayeredForm {
  public void ClampPosition(){var a=Screen.FromPoint(new Point(Left+Width/2,Top+Height/2)).WorkingArea;Location=new Point(Math.Max(a.Left,Math.Min(Left,a.Right-Width)),Math.Max(a.Top,Math.Min(Top,a.Bottom-Height)));}
  public void React(string pose,string text,int seconds){Pose=pose;poseUntil=DateTime.Now.AddSeconds(seconds);speech=text;sayUntil=poseUntil;if(Visible)Render();}
  public Point Pocket {get{return new Point(Left+132,Top+280);}}
- public void CaptureClip(Clip clip){React("happy","收到啦，已经装进口袋！",3);if(Visible&&app.Settings.Animations){var fly=new ClipFlight(Cursor.Position,Pocket,clip.Kind=="image"?"一张图片":Clip.Shorten(clip.Value,22));fly.Show();}}
+ public void CaptureClip(Clip clip){React("happy",Personality.Line("copy",app.Settings),3);if(Visible&&app.Settings.Animations){var fly=new ClipFlight(Cursor.Position,Pocket,clip.Kind=="image"?"一张图片":Clip.Shorten(clip.Value,22));fly.Show();}}
  public void Render(){if(IsDisposed)return;using(var b=new Bitmap(Width,Height,PixelFormat.Format32bppArgb))using(var g=Graphics.FromImage(b)){
   g.SmoothingMode=SmoothingMode.AntiAlias;g.Clear(Color.Transparent);
   if(DateTime.Now<sayUntil){Skin.Card(g,new RectangleF(12,6,236,62),Color.FromArgb(245,255,253,245),16);using(var br=new SolidBrush(Color.FromArgb(245,255,253,245)))g.FillPolygon(br,new[]{new Point(119,66),new Point(135,78),new Point(141,64)});using(var f=Skin.Font(10))using(var sf=new StringFormat{Alignment=StringAlignment.Center,LineAlignment=StringAlignment.Center})Skin.Text(g,speech,f,Skin.Ink,new RectangleF(23,14,213,45),sf);}
