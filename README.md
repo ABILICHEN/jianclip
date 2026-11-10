@@ -1,6 +1,6 @@
 ﻿# 简贴 · 袋袋的灵感口袋
 
-Windows 10/11 剪贴板管理器 + 小袋鼠桌宠。复制一下，袋袋替你收好；需要时，随手取用。
+Windows 10/11 剪贴板管理器 + 小袋鼠桌宠。复制一下，袋袋替你收好；需要时，随手取用。主动学习不如被动接受，这款软件将极大增强小初高学生的语文英语等各个方面的能力
 
 [下载最新版本](https://github.com/ABILICHEN/jianclip/releases/latest)
 
@@ -8,7 +8,7 @@ Windows 10/11 剪贴板管理器 + 小袋鼠桌宠。复制一下，袋袋替你
 
 ![袋袋的动作](assets/kangaroo-poses.png)
 
-## v0.3.0 · 离线知识电台与毒舌人格
+## v0.3.0 · 离线知识电台与多样人格
 
 每隔自己设定的时间，让袋袋送来一句诗、一个新词或一道小题。默认每 5 分钟推送，诗词出现 8 秒后展开赏析；两个时间都可修改。
 
@@ -90,10 +90,4 @@ v0.2.0 已通过 22 项核心检查和 7 项桌面集成检查：加密、去重
 
 ## 调研参考
 
-本项目独立实现，没有复制以下项目的代码和美术资源：
-
-- [Ditto](https://github.com/sabrogden/Ditto)：Windows 剪贴板历史。
-- [CopyQ](https://github.com/hluk/CopyQ)：剪贴板管理和历史检索。
-- [Shijima-Qt](https://github.com/pixelomer/Shijima-Qt)：桌面角色与透明悬浮交互调研参考。
-- [desktop-pets](https://github.com/chrisjames432/desktop-pets)：桌宠与提醒组合调研参考。
-- [Microsoft 剪贴板监听](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-addclipboardformatlistener) / [隐私标记](https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats)。
+本项目独立实现，没有复制其它美术资源
