@@ -2,6 +2,8 @@
 
 本版包含经过筛选与格式转换的开源数据，许可全文随源码、便携包和内嵌压缩库一起分发。
 
+项目自身的代码采用仓库根目录 LICENSE 中的 MIT 许可证，版权声明为 Copyright (c) 2026 ABILICHEN。该声明不替代以下第三方作者的版权声明；分发涉及这些数据的版本时，仍须保留其原始许可和版权说明。项目的 MIT 许可不代表对上游数据的全部权利来源作出保证。
+
 ## chinese-poetry
 
 - 项目：https://github.com/chinese-poetry/chinese-poetry

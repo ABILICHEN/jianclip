@@ -93,3 +93,18 @@ v0.2.0 已通过 22 项核心检查和 7 项桌面集成检查：加密、去重
 ## 调研参考
 
 本项目独立实现，没有复制其它美术资源
+## 开源许可证与许可说明
+
+本项目代码采用 [MIT License](LICENSE)，版权声明为 **Copyright (c) 2026 ABILICHEN**。第三方数据和资源须同时遵守各自的许可，详见 [第三方说明](THIRD_PARTY_NOTICES.md) 和 [licenses](licenses) 目录。
+
+MIT 是开源许可证，不是资质认证，不需要向 MIT 大学申请、缴费或领取证书。使用方式与正式条款以 LICENSE 英文原文为准：
+
+- 可以使用、复制、修改、分发、商用和销售软件，也可用于闭源产品。
+- 分发软件副本或实质性部分时，必须保留版权声明和完整许可文本；涉及第三方数据时也须保留相应的版权与许可。
+- 使用或分发软件不强制付费或捐赠；自愿支持不会改变 MIT 授权条件。
+- 软件按现状提供，不承诺无缺陷或特定用途效果；MIT 许可也不是安全审核、教育效果认证或数据准确性认证。
+- MIT 不等同于软件著作权登记、商标注册或应用发布平台要求的其他手续，不能代替这些单独的事项。
+
+分发 EXE 时，请同时附上 LICENSE、THIRD_PARTY_NOTICES.md 和 licenses 目录。许可正文、项目代码、第三方数据来源三者分别说明，避免误认为项目作者拥有第三方数据的全部权利。
+
+参考：[OSI 的 MIT 正式文本](https://opensource.org/license/mit)、[GitHub 仓库许可说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)。
