@@ -4,6 +4,8 @@ Windows 10/11 剪贴板管理器 + 小袋鼠桌宠。复制一下，袋袋替你
 
 [下载最新版本](https://github.com/ABILICHEN/jianclip/releases/latest)
 
+项目现已公开，欢迎查看源码、下载试用，并通过 [Issues 反馈问题与建议](https://github.com/ABILICHEN/jianclip/issues) 或 [Discussions 参与交流](https://github.com/ABILICHEN/jianclip/discussions)。参与评论需要登录 GitHub。
+
 ![新版主界面](docs/main-window.png)
 
 ![袋袋的动作](assets/kangaroo-poses.png)
@@ -74,7 +76,7 @@ Windows 10/11 剪贴板管理器 + 小袋鼠桌宠。复制一下，袋袋替你
 - 遵守 ExcludeClipboardContentFromMonitorProcessing 与 CanIncludeInClipboardHistory=0 隐私标记。未带标记的敏感文字仍可能被保存，处理此类内容时可开启暂停记录。
 - 自动粘贴受 Windows 前台切换与权限限制；管理员窗口、部分游戏和特殊编辑器可能需要“仅复制”后手动 Ctrl+V。目标窗口发生变化时会保留复制内容并提示手动粘贴。
 - “远眺约 20 秒”是提醒文案，不会锁屏或强制倒计时。提醒以本机时间计算，程序关闭期间不计时。夜间安静时段固定为 22:00–08:00，可关闭夜间安静。
-- 私有仓库的 Release 仅限有仓库权限的用户下载。
+- 仓库与 Release 已公开，所有人均可查看项目和下载版本。
 
 ## 构建与验证
 
