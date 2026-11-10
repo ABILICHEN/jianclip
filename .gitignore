@@ -1,0 +1,12 @@
+# Local data and secrets
+history.dat*
+*.tmp
+.env
+.env.*
+*.pfx
+*.key
+# Test binaries
+dist/SmokeTests.exe
+# Editor files
+.vs/
+.vscode/
