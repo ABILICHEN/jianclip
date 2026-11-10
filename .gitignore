@@ -1,12 +1,18 @@
 # Local data and secrets
 history.dat*
+settings.json
 *.tmp
 .env
 .env.*
 *.pfx
 *.key
-# Test binaries
+# Generated test and intermediate binaries
+dist/**/SmokeTests.exe
+dist/**/IntegrationTests.exe
 dist/SmokeTests.exe
+dist/IntegrationTests.exe
+dist/verify/
+dist/v0.2.0/
 # Editor files
 .vs/
 .vscode/
